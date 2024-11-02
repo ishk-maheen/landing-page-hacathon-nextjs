@@ -2,20 +2,427 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  font-size: 14px;
+  letter-spacing: 4px;
+  height: 102px;
+  padding: 5px 100px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.headerButton {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+.mainli {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.logo {
+  padding-left: 10px;
+  width: 95px;
+  height: 60px;
+}
+
+.mainbody {
+  width: 90%;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeading h1 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.project {
+  padding-top: 100px;
+  color: rgb(184, 184, 184);
+}
+
+.lorem {
+  font-weight: bold;
+}
+
+.icons {
+  padding: 80px 0px;
+  display: flex;
+  gap: 20px;
+  padding-left: 5px;
+}
+
+.icons svg {
+  background-color: #e0e0e073;
+  border-radius: 2px;
+  color: rgb(65, 65, 65);
+}
+
+.text {
+  font-size: 40px;
+  color: rgb(184, 184, 184);
+}
+
+.veiwProject {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 40px;
+}
+
+.buildingImage {
+  width: 770px;
+  height: 829px;
+  position: relative;
+}
+
+.building Image {
+  width: 770px;
+  height: 829px;
+}
+
+.about {
+  margin: 100px 0px;
+  background-color: #e0e0e06a;
+  display: flex;
+  align-items: center;
+  height: 430px;
+  position: relative;
+}
+
+.aboutImages {
+  display: flex;
+  align-items: center;
+  width: 540px;
+  height: 430px;
+  margin-left: 50px;
+}
+
+.images {
+  padding: 35px 20px;
+}
+
+.imgone {
+  padding-top: 50px;
+}
+
+.imgtwo {
+  padding-top: 35px;
+}
+
+.imgthree {
+  padding: 50px 0px;
+}
+
+.aboutText {
+  font-size: 20px;
+  margin: 0px 100px;
+  position: relative;
+  height: 360px;
+}
+
+.about h2 {
+  font-size: 55px;
+  color: rgb(184, 184, 184);
+}
+
+.about p {
+  font-size: 18px;
+  margin-top: 5px;
+  width: 550px;
+}
+
+.readMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+}
+
+.statements {
+  height: 240px;
+  margin-bottom: 50px;
+}
+
+.statements h2 {
+  font-size: 45px;
+  color: rgb(184, 184, 184);
+}
+
+.statementContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one {
+  display: flex;
+  width: 600px;
+}
+
+.two {
+  display: flex;
+  width: 600px;
+}
+
+.one h3,
+.two h3 {
+  font-size: 110px;
+  color: rgba(184, 184, 184, 0.438);
+  padding: 0px 20px;
+  font-weight: bolder;
+}
+
+.one p,
+.two p {
+  color: rgb(65, 65, 65);
+  padding: 40px 50px 0px 20px;
+}
+
+.ourProjects {
+  height: 820px;
+  margin-bottom: 100px;
+}
+
+.ourProjects h2 {
+  font-size: 45px;
+  color: rgb(184, 184, 184);
+  padding-bottom: 20px;
+}
+
+.projectImages {
+  position: relative;
+  height: 650px;
+}
+
+.project1{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 305px;
+}
+.project2{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 305px;
+}
+.project3{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  height: 305px;
+}
+.project4{
+  position: absolute;
+  bottom: 0%;
+  left: 28%;
+  height: 305px;
+}
+.project5{
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  height: 305px;
+  
+}
+.project6{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 305px;
+}
+
+.textOnImage {
+  width: 283px;
+  height: 200px;
+  z-index: 3;
+  position: absolute;
+  top: 10%;
+  left: 17%;
+}
+
+.textOnImage h3 {
+  color: white;
+  font-size: 54px;
+  font-weight: bold;
+  inline-size: 2px;
+}
+
+.textOnImage p {
+  display: flex;
+  color: white;
+}
+
+.allProjects {
+  display: flex;
+  padding: 20px 30px;
+  background-color: rgb(65, 65, 65);
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+}
+
+.contact {
+  height: 603px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.form h2 {
+  font-size: 45px;
+  color: rgb(184, 184, 184);
+  padding-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="e-mail"],
+textarea {
+  width: 500px;
+  padding: 11px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e0e0e099;
+}
+
+textarea {
+  height: 140px;
+}
+
+.sendEmail {
+  display: flex;
+  padding: 20px 30px;
+  background-color: rgb(65, 65, 65);
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+.contactImage {
+  margin-top: 80px;
+}
+
+.footer {
+  background-color: rgb(65, 65, 65);
+  color: white;
+  padding-top: 50px;
+  text-align: center;
+  height: 417px;
+  position: relative;
+}
+
+.footermain {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+
+.footerlogo {
+  width: 145px;
+  height: 94px;
+}
+
+.footerlogo Image {
+  width: 145px;
+  height: 94px;
+}
+
+.information {
+  text-align: left;
+  height: 240px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.information ul {
+  list-style: none;
+}
+
+.information ul li {
+  padding: 10px 0;
+}
+
+.contactInfo {
+  text-align: left;
+  height: 240px;
+  width: 250px;
+}
+
+.location {
+  display: flex;
+  padding: 20px 0px;
+}
+
+.location svg {
+  margin-right: 30px;
+}
+
+.phone {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+.phone svg {
+  margin-right: 30px;
+}
+
+.email {
+  display: flex;
+}
+
+.email svg {
+  margin-right: 30px;
+}
+
+.socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  width: 200px;
+}
+
+.footerEnd {
+  font-size: 18px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid rgba(184, 184, 184, 0.077);
+  text-align: center;
+  padding: 20px;
 }
